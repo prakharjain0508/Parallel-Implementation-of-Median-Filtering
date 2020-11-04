@@ -28,31 +28,37 @@ The variables that were private to each thread are {pixel_values, my_rank, t3, t
 ## RESULTS
 The input and output images for both serial and parallel execution are of .pgm format which is a Portable Grayscale Map. A PGM image represents a grayscale graphic image. There are many pseudo-PGM formats in use where everything is as specified herein except for the meaning of individual pixel values. For most purposes, a PGM image can just be thought of an array of arbitrary integers, and all the programs in the world that think they're processing a grayscale image can easily be tricked into processing something else. 
 ### Data Set 1: Input_Image1.pgm (18,994 KB)
-Speedup = 𝑇𝑠𝑒𝑟𝑖𝑎𝑙 / 𝑇𝑝𝑎𝑟𝑎𝑙𝑙𝑒𝑙
+Speedup = Tserial / Tparallel
         = 160.820007 / 59.778781
         ~ 2.69
 
-Efficiency = 𝑆𝑝𝑒𝑒𝑑𝑢𝑝 / No.of threads
+Efficiency = Speedup / No.of threads
            = 2.69 / 16
            = 16.8%
            
 ### Data Set 2: Input_Image2.pgm (23,438 KB)
-Speedup = 𝑇𝑠𝑒𝑟𝑖𝑎𝑙 / 𝑇𝑝𝑎𝑟𝑎𝑙𝑙𝑒𝑙
+Speedup = Tserial / Tparallel
         = 204.369995 / 74.463772
         ~ 2.74
 
-Efficiency = 𝑆𝑝𝑒𝑒𝑑𝑢𝑝 / No.of threads
+Efficiency = Speedup / No.of threads
            = 2.74 / 16 
            = 17.12%
 
 ## REFERENCES
 [1] https://www.mathworks.com/help/images/ref/medfilt2.html
-[2]https://www.cs.auckland.ac.nz/courses/compsci373s1c/PatricesLectures/Image%20Filtering_2up.pdf
-[3] An Improved Median Filtering Algorithm for Image Noise Reduction - Youlian Zhu, Cheng Huang
-(https://ac.els-cdn.com/S1875389212005494/1-s2.0-S1875389212005494-main.pdf?_tid=5d583886-669c-4c49-a8df-cec956c8c851&acdnat=1540960253_d76b3e6405bd110c4c0f65251d38deaf)
-[4] https://www.ece.rice.edu/~wakin/images/
-[5] https://www.cs.cmu.edu/~eugene/teach/algs00a/progs/
-[6] https://www.youtube.com/watch?v=APkdYObUJRU
-[7] Data-set source: https://unsplash.com/search/photos/4k Converted .jpg to .pgm image from: https://convertio.co/jpg-pgm/
-[8] https://www.openmp.org/wp-content/uploads/openmp-4.5.pdf
-[9] https://www.openmp.org/wp-content/uploads/openmp-examples-4.5.0.pdf
+
+[2] https://www.cs.auckland.ac.nz/courses/compsci373s1c/PatricesLectures/Image%20Filtering_2up.pdf
+
+[3] Youlian Zhu, Cheng Huang, An Improved Median Filtering Algorithm for Image Noise Reduction, Physics Procedia, Volume 25, 2012, Pages 609-616, ISSN 1875-3892
+
+[4] https://www.cs.cmu.edu/~eugene/teach/algs00a/progs/
+
+[5] https://www.youtube.com/watch?v=APkdYObUJRU
+
+[6] Data-set source: https://unsplash.com/search/photos/4k Converted .jpg to .pgm image from: https://convertio.co/jpg-pgm/
+
+[7] https://www.openmp.org/wp-content/uploads/openmp-4.5.pdf
+
+[8] https://www.openmp.org/wp-content/uploads/openmp-examples-4.5.0.pdf
+
